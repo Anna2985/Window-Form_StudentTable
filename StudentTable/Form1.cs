@@ -44,6 +44,7 @@ namespace StudentTable
         private void Form1_Load(object sender, EventArgs e)
         {
             MyMessageBox.音效 = false;
+            Button_init_Click(null, null);
         }
         private void Button_init_Click(object sender, EventArgs e)
         {
