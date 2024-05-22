@@ -30,6 +30,11 @@ namespace StudentTable
         private void InitializeComponent()
         {
             this.sqL_DataGridView_student = new SQLUI.SQL_DataGridView();
+            this.button_init = new System.Windows.Forms.Button();
+            this.button_創建表單 = new System.Windows.Forms.Button();
+            this.button_新增 = new System.Windows.Forms.Button();
+            this.button_刪除 = new System.Windows.Forms.Button();
+            this.button_顯示全部 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // sqL_DataGridView_student
@@ -51,6 +56,7 @@ namespace StudentTable
             this.sqL_DataGridView_student.columnHeadersHeight = 18;
             this.sqL_DataGridView_student.columnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.sqL_DataGridView_student.DataGridViewAutoSizeColumnMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.sqL_DataGridView_student.Font = new System.Drawing.Font("新細明體", 9F);
             this.sqL_DataGridView_student.ImageBox = false;
             this.sqL_DataGridView_student.Location = new System.Drawing.Point(1, 3);
             this.sqL_DataGridView_student.Name = "sqL_DataGridView_student";
@@ -83,11 +89,61 @@ namespace StudentTable
             this.sqL_DataGridView_student.首列樣式 = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
             this.sqL_DataGridView_student.首行樣式 = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
             // 
+            // button_init
+            // 
+            this.button_init.Location = new System.Drawing.Point(12, 366);
+            this.button_init.Name = "button_init";
+            this.button_init.Size = new System.Drawing.Size(110, 46);
+            this.button_init.TabIndex = 1;
+            this.button_init.Text = "Init";
+            this.button_init.UseVisualStyleBackColor = true;
+            // 
+            // button_創建表單
+            // 
+            this.button_創建表單.Location = new System.Drawing.Point(128, 366);
+            this.button_創建表單.Name = "button_創建表單";
+            this.button_創建表單.Size = new System.Drawing.Size(110, 46);
+            this.button_創建表單.TabIndex = 1;
+            this.button_創建表單.Text = "創建表單";
+            this.button_創建表單.UseVisualStyleBackColor = true;
+            // 
+            // button_新增
+            // 
+            this.button_新增.Location = new System.Drawing.Point(244, 366);
+            this.button_新增.Name = "button_新增";
+            this.button_新增.Size = new System.Drawing.Size(110, 46);
+            this.button_新增.TabIndex = 1;
+            this.button_新增.Text = "新增";
+            this.button_新增.UseVisualStyleBackColor = true;
+            // 
+            // button_刪除
+            // 
+            this.button_刪除.Location = new System.Drawing.Point(360, 366);
+            this.button_刪除.Name = "button_刪除";
+            this.button_刪除.Size = new System.Drawing.Size(110, 46);
+            this.button_刪除.TabIndex = 1;
+            this.button_刪除.Text = " 刪除";
+            this.button_刪除.UseVisualStyleBackColor = true;
+            // 
+            // button_顯示全部
+            // 
+            this.button_顯示全部.Location = new System.Drawing.Point(128, 418);
+            this.button_顯示全部.Name = "button_顯示全部";
+            this.button_顯示全部.Size = new System.Drawing.Size(110, 46);
+            this.button_顯示全部.TabIndex = 1;
+            this.button_顯示全部.Text = "顯示全部";
+            this.button_顯示全部.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1258, 556);
+            this.Controls.Add(this.button_顯示全部);
+            this.Controls.Add(this.button_刪除);
+            this.Controls.Add(this.button_新增);
+            this.Controls.Add(this.button_創建表單);
+            this.Controls.Add(this.button_init);
             this.Controls.Add(this.sqL_DataGridView_student);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -98,6 +154,11 @@ namespace StudentTable
         #endregion
 
         private SQLUI.SQL_DataGridView sqL_DataGridView_student;
+        private System.Windows.Forms.Button button_init;
+        private System.Windows.Forms.Button button_創建表單;
+        private System.Windows.Forms.Button button_新增;
+        private System.Windows.Forms.Button button_刪除;
+        private System.Windows.Forms.Button button_顯示全部;
     }
 }
 
