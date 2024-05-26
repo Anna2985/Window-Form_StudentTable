@@ -23,8 +23,11 @@ namespace StudentTable
             this.button_新增.Click += Button_新增_Click;
             this.button_刪除.Click += Button_刪除_Click;
             this.button_顯示全部.Click += Button_顯示全部_Click;
+            this.button_編輯.Click += Button_編輯_Click;
             this.button_創建表單.Enabled = false;
             
+
+
 
 
         }
@@ -122,5 +125,23 @@ namespace StudentTable
             this.sqL_DataGridView_student.SQL_DeleteExtra(list_value, true);
 
         }
+        private void Button_編輯_Click(object sender, EventArgs e)
+        {
+            List<object[]> list_value = this.sqL_DataGridView_student.Get_All_Select_RowsValues();
+            if (list_value.Count() == 0)
+            {
+                MyMessageBox.ShowDialog("未選取資料");
+                return;              
+            }
+            textBox_名字.Text = list_value[0][(int)enum_profile.名字].ObjectToString();
+            textBox_學號.Text = list_value[0][(int)enum_profile.學號].ObjectToString();
+            textBox_地址.Text = list_value[0][(int)enum_profile.地址].ObjectToString();
+            textBox_英文成績.Text = list_value[0][(int)enum_profile.英文成績].ObjectToString();
+        }
+
+
+        
+
+        
     }
 }
